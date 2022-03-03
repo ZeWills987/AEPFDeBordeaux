@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AEPF de Bordeaux</title>
+    <!-- Style -->
+    <style>
+        body{
+            margin: 0;
+        }
+        /* Suppréssion des points et des paramètres de li */
+        ul {
+            list-style-type:none ;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        /* Fixation de la navbar en haut de la fênetre*/
+            position: sticky;
+            position: -webkit-sticky;
+            top: 0;
+            width: 100%;
+        }
+        /* Arrangement horizental de la navbar */
+        li {
+            float: left;
+        }
+        /* Config du texte des items de navbar */
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        /* Hover de la marque pages */
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+        /* Marque pages */
+        .active {
+            background-color: #04AA6D;
+        }
+        /* Séparateurs des items navbar gauche */
+        .leftNav { 
+            border-right: 1px solid #bbb;
+        }
+        /* Séparateurs des items navbar droite */
+        .rightNav{
+            border-left: 1px solid #bbb;
+        }
+
+        .rightNav:last-child {
+        border-right: none;
+        }
+
+        header{
+            display: flex;
+        }
+        .title {
+            padding: 0px 10px;
+        }
+        img{
+            height: 45px;
+            width: 45px;
+            padding: 10px ;
+            padding-left: 55px;
+        }
+        p{
+            display: flex;
+            padding: 10px;
+            text-align: left;
+            font-family: "Times New Roman", Times, serif;
+            text-indent: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- En tête -->
+    <header>
+        <a href="index.html">
+            <img src="image/logo.jpg" alt="logo">
+        </a>
+        <h2 class="title">AEPF de Bordeaux</h2>
+    </header>
+
+    <!-- Barre de naviguation -->
+    <nav>
+        <ul>
+            <li class="leftNav">
+                <a class="active" href="index.html">Accueuil</a>
+            </li>
+    
+            <li class="leftNav">
+                <a href="equipe.html">Equipe</a> 
+            </li>
+    
+            <li class="leftNav">
+                <a href="travail.html">Travail</a>
+            </li>
+    
+            <li class="leftNav"
+            ><a href="adhesion.html">Adhésion</a>
+            </li>
+    
+            <li class="rightNav" style="float:right">
+                <a href="contact.html">Contact</a>
+            </li>
+    
+            <li class="rightNav" style="float:right">
+                <a href="a_propos.html">A propos</a>
+            </li>
+    
+        </ul>
+    </nav>
+
+    <!-- Contenue principale du site-->
+    <article>
+        <p>L' Association des Étudiants de Polynésie Française de Bordeaux a pour objectif l'intégration des étudiants polynésiens en académie bordelaise. Elle réunit les jeunes dans le respect mutuel de leurs convictions personnelles depuis 1972</p>
+    </article>
+</body>
+</html>
